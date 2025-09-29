@@ -1,4 +1,4 @@
-package com.senac.uc14.atv1;
+package com.senac.uc14.atv2;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

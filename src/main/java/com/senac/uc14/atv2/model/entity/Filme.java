@@ -1,4 +1,4 @@
-package com.senac.uc14.atv1.model.entity;
+package com.senac.uc14.atv2.model.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

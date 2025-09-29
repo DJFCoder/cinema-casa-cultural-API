@@ -1,4 +1,4 @@
-package com.senac.uc14.atv1.controller;
+package com.senac.uc14.atv2.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
