@@ -8,7 +8,7 @@ import jakarta.validation.constraints.Size;
 public record AnaliseDTO(
         @NotNull(message = "ID do filme é obrigatório")
         Long filmeId,
-        @Size(min = 2, max = 500, message = "A análise deve ter entre 2 e 500 caracteres")
+        @Size(min = 2, max = 255, message = "A análise deve ter entre 2 e 255 caracteres")
         String filmeAnalise,
         @NotNull(message = "Nota obrigatória")
         @Min(0)
