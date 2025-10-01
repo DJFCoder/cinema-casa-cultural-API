@@ -1,18 +1,39 @@
 package com.senac.uc14.atv2.controller;
 
+import java.util.List;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
+import com.senac.uc14.atv2.model.dto.AnaliseDTO;
+import com.senac.uc14.atv2.model.entity.Analise;
+import com.senac.uc14.atv2.service.AnaliseService;
+
+import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/analises")
 public class AnaliseController {
 
-  @PostMapping
-  public ResponseEntity<Object> salvarAnalise() {
-    return null;
-  }
+    private final AnaliseService analiseService;
+
+    public AnaliseController(AnaliseService analiseService) {
+        this.analiseService = analiseService;
+    }
+
+    @PostMapping("/cadastrar")
+    public ResponseEntity<Analise> cadastrarAnalise(@Valid @RequestBody AnaliseDTO dto) {
+        return ResponseEntity.status(HttpStatus.CREATED).body(analiseService.analiseRegister(dto));
+    }
+
+    @GetMapping
+    public ResponseEntity<List<Analise>> listarAnalises() {
+        return ResponseEntity.status(HttpStatus.OK).body(analiseService.analiseListAll());
+    }
 
 }

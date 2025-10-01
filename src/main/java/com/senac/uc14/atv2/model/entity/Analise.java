@@ -1,7 +1,6 @@
 package com.senac.uc14.atv2.model.entity;
 
 import jakarta.persistence.Entity;
-import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -14,13 +13,14 @@ import lombok.Data;
 @Entity
 @Table(name = "analise")
 public class Analise {
-  @Id
-  @GeneratedValue(strategy = GenerationType.AUTO)
-  private Long id;
 
-  @ManyToOne(fetch = FetchType.LAZY, optional = false)
-  @JoinColumn(name = "filme_id", nullable = false)
-  private Filme filme;
-  private String filmeAnalise;
-  private Integer nota;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
+
+    @ManyToOne
+    @JoinColumn(name = "filme_id", nullable = false)
+    private Filme filme;
+    private String filmeAnalise;
+    private Integer nota;
 }
