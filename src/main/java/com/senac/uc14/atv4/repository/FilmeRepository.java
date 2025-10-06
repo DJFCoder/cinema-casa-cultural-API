@@ -1,9 +1,9 @@
-package com.senac.uc14.atv2.repository;
+package com.senac.uc14.atv4.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.senac.uc14.atv2.model.entity.Filme;
+import com.senac.uc14.atv4.model.entity.Filme;
 
 @Repository
 public interface FilmeRepository extends JpaRepository<Filme, Long> {

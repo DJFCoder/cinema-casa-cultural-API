@@ -1,4 +1,4 @@
-package com.senac.uc14.atv2.controller;
+package com.senac.uc14.atv4.controller;
 
 import java.util.List;
 
@@ -11,9 +11,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.senac.uc14.atv2.model.dto.AnaliseDTO;
-import com.senac.uc14.atv2.model.entity.Analise;
-import com.senac.uc14.atv2.service.AnaliseService;
+import com.senac.uc14.atv4.model.dto.AnaliseDTO;
+import com.senac.uc14.atv4.model.entity.Analise;
+import com.senac.uc14.atv4.service.AnaliseService;
 
 import jakarta.validation.Valid;
 

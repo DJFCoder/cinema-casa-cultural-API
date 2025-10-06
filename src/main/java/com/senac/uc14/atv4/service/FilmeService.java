@@ -1,12 +1,12 @@
-package com.senac.uc14.atv2.service;
+package com.senac.uc14.atv4.service;
 
 import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.senac.uc14.atv2.model.dto.FilmeDTO;
-import com.senac.uc14.atv2.model.entity.Filme;
-import com.senac.uc14.atv2.repository.FilmeRepository;
+import com.senac.uc14.atv4.model.dto.FilmeDTO;
+import com.senac.uc14.atv4.model.entity.Filme;
+import com.senac.uc14.atv4.repository.FilmeRepository;
 
 @Service
 public class FilmeService {

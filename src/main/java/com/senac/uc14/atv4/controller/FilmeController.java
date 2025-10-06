@@ -1,4 +1,4 @@
-package com.senac.uc14.atv2.controller;
+package com.senac.uc14.atv4.controller;
 
 import java.util.List;
 
@@ -12,9 +12,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.senac.uc14.atv2.model.dto.FilmeDTO;
-import com.senac.uc14.atv2.model.entity.Filme;
-import com.senac.uc14.atv2.service.FilmeService;
+import com.senac.uc14.atv4.model.dto.FilmeDTO;
+import com.senac.uc14.atv4.model.entity.Filme;
+import com.senac.uc14.atv4.service.FilmeService;
 
 import jakarta.validation.Valid;
 

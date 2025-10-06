@@ -1,4 +1,4 @@
-package com.senac.uc14.atv2.model.dto;
+package com.senac.uc14.atv4.model.dto;
 
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;

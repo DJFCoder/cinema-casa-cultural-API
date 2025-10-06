@@ -1,4 +1,4 @@
-package com.senac.uc14.atv2.exception;
+package com.senac.uc14.atv4.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
